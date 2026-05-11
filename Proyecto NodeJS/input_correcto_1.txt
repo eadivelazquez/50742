@@ -1,0 +1,4 @@
+repetir {
+    imprimir("Analisis lexico exitoso");
+    imprimir("UTN Mendoza - 2026");
+} hasta verdadero;

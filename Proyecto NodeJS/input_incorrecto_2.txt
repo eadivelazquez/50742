@@ -1,0 +1,3 @@
+repetir {
+    imprimir("Probando error de simbolos");
+} hasta @falso;

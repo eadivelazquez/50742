@@ -1,0 +1,4 @@
+repetir {
+    imprimir("Hola UTN");
+    imprimir("Analizador funcionando");
+} hasta verdadero;

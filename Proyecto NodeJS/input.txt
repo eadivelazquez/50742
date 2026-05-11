@@ -1,4 +1,5 @@
 repetir {
-    imprimir("Hola UTN");
-    imprimir("Analizador funcionando");
-} hasta verdadero;
+    imprimir("Iniciando pruebas de sistema...");
+    imprimir("Legajo 50742 verificado");
+    salir;
+} hasta falso;

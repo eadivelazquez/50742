@@ -1,0 +1,5 @@
+repetir {
+    imprimir("Iniciando pruebas de sistema...");
+    imprimir("Legajo 50742 verificado");
+    salir;
+} hasta falso;

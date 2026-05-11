@@ -24,8 +24,7 @@ async function main() {
         const inputStream = antlr4.CharStreams.fromString(input);
         const lexer = new LenguajeLexer(inputStream);
         const tokenStream = new antlr4.CommonTokenStream(lexer);
-        
-        // --- PUNTO 2: TABLA DE LEXEMAS Y TOKENS (BLINDADA) ---
+
         console.log("\n=== 📋 TABLA DE LEXEMAS Y TOKENS ===");
         console.log("Lexema".padEnd(20) + " | " + "Token");
         console.log("-".repeat(40));
@@ -42,8 +41,7 @@ async function main() {
                 console.log(`${t.text.padEnd(20)} | ${name}`);
             }
         });
-
-        // --- PROCESO DE ANÁLISIS SINTÁCTICO ---
+        //El analisis sintactico
         const parser = new LenguajeParser(tokenStream);
         const tree = parser.programa();
 

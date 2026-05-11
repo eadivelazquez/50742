@@ -5,7 +5,7 @@ import LenguajeParser from './src/parser/LenguajeParser.js';
 import CustomVisitor from './CustomVisitor.js';
 
 async function main() {
-    console.log(">>> 🚀 Iniciando el Analizador Sintáctico...");
+    console.log("Iniciando el Analizador Sintáctico...");
     
     const fileName = 'input.txt';
 
@@ -17,7 +17,7 @@ async function main() {
         const input = fs.readFileSync(fileName, 'utf8');
         
         if (input.trim().length === 0) {
-            console.warn("⚠️ El archivo input.txt está vacío.");
+            console.warn("El archivo input.txt está vacío.");
             return;
         }
 
@@ -25,7 +25,7 @@ async function main() {
         const lexer = new LenguajeLexer(inputStream);
         const tokenStream = new antlr4.CommonTokenStream(lexer);
 
-        console.log("\n=== 📋 TABLA DE LEXEMAS Y TOKENS ===");
+        console.log("\n=== TABLA DE LEXEMAS Y TOKENS ===");
         console.log("Lexema".padEnd(20) + " | " + "Token");
         console.log("-".repeat(40));
         
@@ -50,7 +50,7 @@ async function main() {
         } else {
             console.log("\n✅ Análisis léxico y sintáctico exitoso.");
             
-            console.log("\n=== 🌳 ÁRBOL DE DERIVACIÓN ===");
+            console.log("\n=== ÁRBOL DE DERIVACIÓN ===");
             console.log(tree.toStringTree(parser.ruleNames));
 
             console.log("\n=== ⚙️ EJECUCIÓN DEL INTÉRPRETE ===");

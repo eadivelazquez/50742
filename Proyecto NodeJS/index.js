@@ -53,7 +53,7 @@ async function main() {
             console.log("\n=== ÁRBOL DE DERIVACIÓN ===");
             console.log(tree.toStringTree(parser.ruleNames));
 
-            console.log("\n=== ⚙️ EJECUCIÓN DEL INTÉRPRETE ===");
+            console.log("\n=== EJECUCIÓN DEL INTÉRPRETE ===");
             const visitor = new CustomVisitor();
             visitor.visit(tree);
             
